@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page-Expert Business Consulting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><b>Consultancy</b></div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <h1>Transform Your Business with Expert Consulting</h1>
+            <p>We help businesses achieve their full potential through strategic guidance and innovative solutions.</p>
+            <a href="#contact" class="cta-button">Request a Consult</a>
+        </section>
+        
+        <section id="about">
+            <h2>About us</h2>
+            <p id="about-text">With over 20 years of experience, we've helped hundreds of businesses achieve their goals.Our team of expert consultants brings diverse industry knowledge to every project.</p>
+            <p id="about-extended" style="display: none;">
+                We pride ourselves on delivering tailored solutions that drive real results.
+                Our client-centric approach ensures we understand your unique challenges and opportunities.
+                We leverage cutting-edge technologies and methodologies to stay ahead of market trends.
+                Our commitment to excellence has earned us recognition as industry leaders in business consulting.
+            </p>
+            <button id="read-more-btn" onclick="toggleAboutText()">Read More</button>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Strategy Consulting</h3>
+                    <p>Develop winning strategies for your business.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Financial Advisory</h3>
+                    <p>Optimize your financial performance and growth.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Operations Improvement</h3>
+                    <p>Streamline your operations for maximum efficiency.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo magni aliquid officiis harum nesciunt tempore itaque facilis accusantium eligendi cupiditate?"</p>
+                    <p class="client-name">- Manish, CEO of M Solutions</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam temporibus fugit sit eaque libero praesentium ullam sapiente nemo eos."</p>
+                    <p class="client-name">- Deva, CEO of D Solutions</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum mollitia architecto animi non quae iste voluptatem quas eligendi quis. "</p>
+                    <p class="client-name">- Akshay, CEO of A Solutions</p>
+                </div>
+            </div>
+        </section>
+                
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h2>Follow Us</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://youtube.com">Youtube</a></li>
+                <li><a href="https://linkedin.com">linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- <script src="script.js"></script> -->
+    <script>
+        function toggleAboutText() {
+            var extendedText = document.getElementById("about-extended");
+            var btn = document.getElementById("read-more-btn");
+            if (extendedText.style.display === "none") {
+                extendedText.style.display = "block";
+                btn.innerHTML = "Read Less";
+            } else {
+                extendedText.style.display = "none";
+                btn.innerHTML = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>
