@@ -5,21 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish Kumar</title>
     <link rel="stylesheet" href="style.css">
-</head>
 
-<body id="top">
-    <header class="m-header">
-        <nav class="Navbar"> 
-            <div class="logo">Manish</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul> 
-        </nav>
-    </header>
-    <!-- Navbar Ends -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar flex items-centre justify-between" tabindex="0">
+                 <div class="menu_container flex justify-right" id="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero flex items-centre justify-between">
+        <div class="image flex-1 justify-center">
+            <img src="resources/Manish.jpg" alt="My Image">
+        </div>
+        <div class="name flex-1">
+            <h6>Hi!</h6>
+            <h1>I'm a Web <br> <span>Developer</span></h1>
+                <p>
+                    Passionate about turning complex problems into simple, beautiful, and intuitive web designs. I leverage modern web technologies to build responsive and interactive websites, focusing on performance, accessibility, and user experience.
+                </p>
+                <div class="cv_download">
+                   <a href="resources/Resume.pdf" download="">
+                     <button class="btn btn-secondary">
+                        Resume
+                    </button>
+                    </a>    
+                </div>
+        </div>
+    </div>
+</header>
+
+<section class="about" id="about">
+    <div class="about_container flex items-centre">
+        <div class="about_me flex-1">
+            <h1>About <span>me</span> </h1>
+            <h3>HELLO! I'm Manish</h3>
+            <p>
+                Hello! I'm Manish, a B.Tech student specializing in Computer Science and Engineering with a passion for web development. I have a solid foundation in HTML, CSS, and JavaScript, which I use to create dynamic, responsive, and user-friendly websites. My goal is to continuously learn and grow as a developer, while turning ideas into functional and aesthetically pleasing web experiences.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h1>Skills</h1>
+    <p>Here are some of the technologies I work with:</p>
+    <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C++</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+    </div>
+</section>
+
+<section class="project" id="projects">
+    <div class="container">
+        <h1 class="projects-heading">Projects</h1>
+        <p>Work that showcases my proficiency</p>
+        <div class="card-grid">
+
+        <div class="card">
+            <img src="" alt="">   <!--Images to be added-->
+            <h2>E-commerce Website</h2>
+            <p>
+                Developed a responsive e-commerce website focusing on an intuitive user interface and seamless navigation. The frontend was built using HTML, CSS, and JavaScript, ensuring a visually appealing and user-friendly shopping experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <h2>Landing Page</h2>  <!--Images to be added-->
+            <p>
+                Designed a captivating landing page for a company that effectively communicates its brand message and engages visitors from the first interaction. The page features a sleek, modern design with intuitive navigation and compelling calls-to-action, driving user conversion and interest.
+            </p>            
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <h2>Portfolio</h2>  <!--Images to be added-->
+            <p>
+                This portfolio showcases expertise in web development with a modern, responsive design and smooth navigation. It highlights skills in HTML, CSS, and JavaScript, along with a portfolio of projects. The clean layout and interactive elements reflect professional capabilities and creativity.
+            </p>            
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+    <h1>Contact Me</h1>
+    <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-submit">Send</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 Manish Kumar. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
